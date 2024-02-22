@@ -1,19 +1,58 @@
+// /* CSS HEX */
+// --smoky-black: #171511ff;
+// --coyote: #8a6a42ff;
+// --citron: #ddc468ff;
+// --moss-green: #a29f52ff;
+// --bone: #dfd9cdff;
+
+// /* SCSS HEX */
+// $smoky-black: #171511ff;
+// $coyote: #8a6a42ff;
+// $citron: #ddc468ff;
+// $moss-green: #a29f52ff;
+// $bone: #dfd9cdff;
+
+// /* SCSS HSL */
+// $smoky-black: hsla(40, 15%, 8%, 1);
+// $coyote: hsla(33, 35%, 40%, 1);
+// $citron: hsla(47, 63%, 64%, 1);
+// $moss-green: hsla(58, 33%, 48%, 1);
+// $bone: hsla(40, 22%, 84%, 1);
+
+// /* SCSS RGB */
+// $smoky-black: rgba(23, 21, 17, 1);
+// $coyote: rgba(138, 106, 66, 1);
+// $citron: rgba(221, 196, 104, 1);
+// $moss-green: rgba(162, 159, 82, 1);
+// $bone: rgba(223, 217, 205, 1);
+
+// /* SCSS Gradient */
+// $gradient-top: linear-gradient(0deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-right: linear-gradient(90deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-bottom: linear-gradient(180deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-left: linear-gradient(270deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-top-right: linear-gradient(45deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-bottom-right: linear-gradient(135deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-top-left: linear-gradient(225deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-bottom-left: linear-gradient(315deg, #171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+// $gradient-radial: radial-gradient(#171511ff, #8a6a42ff, #ddc468ff, #a29f52ff, #dfd9cdff);
+
 // primary colors
-$cp-darkBlue: #002146;
-$cp-lightBlue: #006be6;
-$cp-darkRed: #700000;
-$cp-brightRed: #e40000;
-$cp-dark: #1c1c1c;
-$cp-darkGrey: #3e3e3e;
+$cp-smoky-black: #171511ff;
+$cp-coyote: #8a6a42ff;
+$cp-citron: #ddc468ff;
+$cp-moss-green: #a29f52ff;
+$cp-bone: #dfd9cdff;
+$cp-dark-grey: #3e3e3e;
 $cp-grey: #898989;
-$cp-lightGrey: #b9b9b9;
-$cp-white: #ececec;
+$cp-light-grey: #b9b9b9;
+
 
 // font colors
-$cf-darkBlue: #002146;
-$cf-darkRed: #700000;
-$cf-dark: #1c1c1c;
-$cf-white: #ececec;
+$cf-smoky-black: #171511ff;
+$cf-coyote: #8a6a42ff;
+$cf-citron: #ddc468ff;
+$cf-bone: #dfd9cdff;
 
 // font-size
 $fs-heading-large: 3.2rem;
