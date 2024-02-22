@@ -46,3 +46,18 @@ ORDER: base + typography > general layout + grid > page layout > components
 		}
 	}
 }
+////////////////////////////////////////////////////////////////////////////////
+/// display flex column
+@mixin displayFlexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/// display flex row
+@mixin displayFlexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}

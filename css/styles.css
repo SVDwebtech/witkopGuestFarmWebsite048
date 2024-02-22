@@ -24,10 +24,6 @@ ORDER: base + typography > general layout + grid > page layout > components
 
 html {
   scroll-behavior: smooth;
-  /* 	1rem is equal to 10px */
-  /* 	because 10px / 10 is equal to 1rem */
-  /* 	therefore 30px is equal to 3rem */
-  /* 	the default font size of the browser is 16px */
   /* 	10px / 16px *100 = 62.5% */
   font-size: 62.5%;
 }
@@ -57,13 +53,13 @@ html {
 }
 
 body {
-  background-color: #1c1c1c;
-  /* This makes dealing with the sizes of elements much easier, 
-  	and generally eliminates a number of pitfalls you can stumble on
-  	 while laying out your content. */
-  /* The width and height properties include the content, padding, and border, 
-  	but do not include the margin.  Note that padding and border will be inside 
-  	of the box. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+  background-color: #1d1d1d;
   box-sizing: border-box;
   position: relative;
 }
@@ -81,10 +77,10 @@ a, button {
 }
 
 body {
-  color: #ececec;
+  color: rgba(146, 14, 14, 0.911);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1.5;
 }
 
@@ -94,6 +90,166 @@ body {
 
 .website-section-bottom-margin {
   margin-bottom: 5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+@media (min-width: 37.5em) {
+  .sidebar {
+    gap: 6rem;
+    padding: 2rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .sidebar {
+    flex: 1 0 25%;
+    gap: 7rem;
+    padding: 2rem 2rem 2rem 0rem;
+  }
+}
+@media (min-width: 75em) {
+  .sidebar {
+    gap: 8rem;
+  }
+}
+@media (min-width: 75em) {
+  .sidebar {
+    gap: 9rem;
+  }
+}
+.sidebar__socialMedia {
+  background-color: white;
+  width: 100%;
+  min-height: 95vh;
+}
+.sidebar__faq {
+  background-color: black;
+  width: 100%;
+  min-height: 95vh;
+}
+.sidebar__contact {
+  background-color: white;
+  width: 100%;
+  min-height: 95vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: white;
+  width: 100%;
+  min-height: 95vh;
+  padding: 1rem;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+}
+.header__heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  min-height: 95vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+@media (min-width: 37.5em) {
+  .main {
+    gap: 6rem;
+    padding: 2rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .main {
+    flex: 1 0 70%;
+    gap: 7rem;
+    padding: 2rem 0 2rem 2rem;
+  }
+}
+@media (min-width: 75em) {
+  .main {
+    gap: 8rem;
+  }
+}
+@media (min-width: 75em) {
+  .main {
+    gap: 9rem;
+  }
+}
+.main__about {
+  background-color: white;
+  width: 100%;
+  min-height: 95vh;
+}
+.main__accommodation {
+  background-color: black;
+  width: 100%;
+  min-height: 95vh;
+}
+.main__activities {
+  background-color: white;
+  width: 100%;
+  min-height: 95vh;
+}
+.main__gallery {
+  background-color: black;
+  width: 100%;
+  min-height: 95vh;
+}
+
+.mainAndSidebarSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 5rem;
+}
+@media (min-width: 56.25em) {
+  .mainAndSidebarSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+.navbar {
+  background-color: aqua;
+  width: 100%;
+  min-height: 7rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

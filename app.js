@@ -1,2 +1,1 @@
-alert("Hello Schalk");
-console.log("Hello World!");
+console.log("Hello Witkop Guest Farm!");

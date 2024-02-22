@@ -27,23 +27,20 @@ html {
 		font-size: 93.75%; // 1.6rem = 24px
 	}
 }
-
 body {
+	@include displayFlexColumn;
+	justify-content: flex-start;
+	gap:5rem;
 	background-color: rgb(29, 29, 29);
 	box-sizing: border-box;
 	position: relative;
 }
-
-
 ol, ul{
 	list-style: none;
 }
-
-
 a {
 	text-decoration: none;
 }
-
 a, button {
 	cursor: pointer;
 }

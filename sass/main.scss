@@ -10,9 +10,11 @@
 @import "components/logo";
 @import "components/socialmedia";
 
+@import "layout/aside";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/main";
+@import "layout/mainAndSidebar";
 @import "layout/navbar";
 
 @import "pages/home";
