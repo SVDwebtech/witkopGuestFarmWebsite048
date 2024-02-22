@@ -2,7 +2,7 @@
       @include displayFlexColumn;
       justify-content: flex-start;
       width: 100%;
-      gap: 5rem;
+      // gap: 5rem;
       @include respond(tab-land) {
             @include displayFlexRow;
             justify-content: space-between;

@@ -29,11 +29,11 @@ html {
 }
 body {
 	@include displayFlexColumn;
-	justify-content: flex-start;
-	gap:5rem;
+	gap: 5rem;
 	background-color: $cp-bone;
 	box-sizing: border-box;
-	position: relative;
+	// min-height: 95vh;
+	// position: relative;
 }
 ol, ul{
 	list-style: none;
