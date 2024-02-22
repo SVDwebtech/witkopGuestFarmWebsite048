@@ -80,10 +80,50 @@ body {
   font-size: clamp(1.4rem, 4.5vw, 1.6rem);
   font-weight: 400;
   line-height: 1.6;
+  text-align: center;
+}
+
+.headingH3 {
+  color: #171511ff;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+.headingH3--footer {
+  color: #8a6a42ff;
+}
+
+.headingH4 {
+  color: #171511ff;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.6rem, 4.5vw, 1.8rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+.headingH4--footer {
+  color: #ddc468ff;
+  text-transform: lowercase;
+}
+
+.paragraph--footer {
+  font-weight: 700;
 }
 
 .footer {
   color: #dfd9cdff;
+}
+.footer__footerNavlink, .footer__footerDeveloperLink, .footer__websiteUsageLink {
+  color: #ddc468ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer__footerCopyright {
+  font-size: clamp(1.5rem, 4.5vw, 1.7rem);
+  font-weight: 700;
 }
 
 .text-align-center {
@@ -149,13 +189,42 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #171511ff;
   width: 100%;
-  min-height: 95vh;
-  padding: 1rem;
+  padding: 3rem 1rem;
   margin-bottom: 0rem;
+}
+.footer__figure {
+  width: 85%;
+}
+.footer__figureLogoImg {
+  display: block;
+  width: clamp(20rem, 50vw, 30rem);
+  height: auto;
+}
+.footer__footerHr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+  width: 100%;
+}
+.footer__figure, .footer__footerSocialMediaNavigation, .footer__footerSiteNavigation, .footer__footerCopyrightAndDeveloperContainer, .footer__websiteUsageNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__footerSocialMediaNavigationList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__footerBrDeveloper {
+  display: block;
 }
 
 .header {
