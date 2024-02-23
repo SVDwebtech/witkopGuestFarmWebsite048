@@ -20,15 +20,34 @@
       @include respond(desk) {
             gap: 9rem; 
       }
-      &__socialMedia {
-            background-color: white;
-            width: 100%;
-            min-height: 95vh;
+      &__testimonials {
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
       }
-      &__faq {
-            background-color: black;
+      &____testimonialsContainer {
             width: 100%;
-            min-height: 95vh;
+      }
+      &__socialMedia {
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
+      }
+      &__socialMediaNavigation {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__socialMediaNavigationList {
+            @include displayFlexRow;
+            gap: 3rem;
+      }
+      &__socialMediaNavigationIcon {
+            width: 4rem;
+            height: 5rem;
       }
       &__contact {
             @include displayFlexColumn;

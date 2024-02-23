@@ -187,15 +187,46 @@ body {
     gap: 9rem;
   }
 }
-.sidebar__socialMedia {
-  background-color: white;
-  width: 100%;
-  min-height: 95vh;
+.sidebar__testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: min(100%, 45rem);
+  padding: 3rem 1rem;
 }
-.sidebar__faq {
-  background-color: black;
+.sidebar____testimonialsContainer {
   width: 100%;
-  min-height: 95vh;
+}
+.sidebar__socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: min(100%, 45rem);
+  padding: 3rem 1rem;
+}
+.sidebar__socialMediaNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.sidebar__socialMediaNavigationList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.sidebar__socialMediaNavigationIcon {
+  width: 4rem;
+  height: 5rem;
 }
 .sidebar__contact {
   display: flex;
