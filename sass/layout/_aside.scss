@@ -31,8 +31,29 @@
             min-height: 95vh;
       }
       &__contact {
-            background-color: white;
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
+      }
+      &__contactAddressContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      &__contactAddressItem {
+            @include displayFlexColumn;
+            gap: .25rem;
+      }
+      &__contactGoogleMapsContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
             width: 100%;
-            min-height: 95vh;
+            padding: 1rem;
+      }
+      &__contactGoogleMapsMap {
+            display: block;
+            width: 100%;
+            height: 60vw;
       }
 }

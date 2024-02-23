@@ -83,12 +83,21 @@ body {
   text-align: center;
 }
 
+.headingH2 {
+  color: #171511ff;
+  font-family: "Protest Riot", sans-serif;
+  font-size: clamp(2.6rem, 6.5vw, 2.8rem);
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
 .headingH3 {
   color: #171511ff;
   font-family: "Lato", sans-serif;
-  font-size: clamp(2.2rem, 5vw, 2.4rem);
+  font-size: clamp(2rem, 5vw, 2.2rem);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
 }
 .headingH3--footer {
@@ -110,6 +119,16 @@ body {
 
 .paragraph--footer {
   font-weight: 700;
+}
+
+.sidebar__contactAddressContainer {
+  font-style: normal;
+}
+.sidebar__contactContactNrLink {
+  color: #8a6a42ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .footer {
@@ -179,9 +198,42 @@ body {
   min-height: 95vh;
 }
 .sidebar__contact {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: min(100%, 45rem);
+  padding: 3rem 1rem;
+}
+.sidebar__contactAddressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.sidebar__contactAddressItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.sidebar__contactGoogleMapsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
-  min-height: 95vh;
+  padding: 1rem;
+}
+.sidebar__contactGoogleMapsMap {
+  display: block;
+  width: 100%;
+  height: 60vw;
 }
 
 .footer {
@@ -193,7 +245,6 @@ body {
   background-color: #171511ff;
   width: 100%;
   padding: 3rem 1rem;
-  margin-bottom: 0rem;
 }
 .footer__figure {
   width: 85%;
