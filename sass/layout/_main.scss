@@ -36,8 +36,10 @@
             min-height: 95vh;
       }
       &__gallery {
-            background-color: black;
-            width: 100%;
-            min-height: 95vh;
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
       }
 }

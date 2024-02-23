@@ -121,6 +121,16 @@ body {
   font-weight: 700;
 }
 
+.carouselAccomm__carouselFigcaptionParagraph {
+  color: #dfd9cdff;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.8rem, 5vw, 2rem);
+  font-weight: 700;
+  text-shadow: 0px 0px 5px #171511;
+  line-height: 1;
+  text-align: left;
+}
+
 .sidebar__contactAddressContainer {
   font-style: normal;
 }
@@ -151,6 +161,76 @@ body {
 
 .website-section-bottom-margin {
   margin-bottom: 5rem;
+}
+
+.carouselAccomm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(95%, 35rem);
+  margin: 0 auto;
+}
+@media (min-width: 56.25em) {
+  .carouselAccomm {
+    width: 35%;
+  }
+}
+.carouselAccomm__carouselImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carouselAccomm__carouselFigure {
+  position: relative;
+  transition: opacity 1.2s;
+}
+.carouselAccomm__carouselFigcaption {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+.carouselAccomm__carouselImage {
+  border: 2px solid #8a6a42ff;
+  box-shadow: 0 0 18px 1px rgba(23, 21, 17, 0.45);
+  height: min(60vw, 20rem);
+  padding: 0.5rem;
+}
+.carouselAccomm__displayNone {
+  display: none;
+}
+.carouselAccomm__carouselNavContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.carouselAccomm__carouselArrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.carouselAccomm__carouselIndexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.carouselAccomm__carouselIndex {
+  border: 1px solid #8a6a42ff;
+  border-radius: 100px;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.carouselAccomm__carouselIndex:first-child {
+  background-color: #8a6a42ff;
 }
 
 .sidebar {
@@ -373,9 +453,14 @@ body {
   min-height: 95vh;
 }
 .main__gallery {
-  background-color: black;
-  width: 100%;
-  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: min(100%, 45rem);
+  padding: 3rem 1rem;
 }
 
 .mainAndSidebarSection {
