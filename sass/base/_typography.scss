@@ -9,6 +9,13 @@ body {
 	line-height: 1.4;
 	text-align: center;	
 }
+.logo {
+	color: $cf-citron;
+	font-family: "Inika", serif;
+	font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+	font-weight: 700;
+	line-height: 1.2;
+}
 
 .headingH2 {
 	color: $cf-smoky-black;

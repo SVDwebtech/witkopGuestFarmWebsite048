@@ -83,6 +83,14 @@ body {
   text-align: center;
 }
 
+.logo {
+  color: #ddc468ff;
+  font-family: "Inika", serif;
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .headingH2 {
   color: #171511ff;
   font-family: "Protest Riot", sans-serif;
@@ -272,6 +280,11 @@ body {
 }
 .carouselAccomm__carouselIndex:first-child {
   background-color: #8a6a42ff;
+}
+
+.logo__img {
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 .sidebar {
@@ -565,11 +578,36 @@ body {
   }
 }
 
-.navbar {
-  background-color: aqua;
-  width: 100%;
-  min-height: 7rem;
-  padding: 1rem;
+.navbarSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171511ff;
+  padding: 1rem 2rem;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.6s;
+}
+@media (min-width: 37.5em) {
+  .navbarSection {
+    padding: 1rem 4rem;
+  }
+}
+@media (min-width: 2000px) {
+  .navbarSection {
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+}
+
+.navbar--background {
+  background-color: #171511ff;
+  border-bottom: 1px solid #ddc468ff;
 }
 
 /*# sourceMappingURL=styles.css.map */
