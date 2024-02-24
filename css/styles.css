@@ -175,6 +175,10 @@ body {
   text-transform: lowercase;
 }
 
+.paragraph--heroIntro {
+  font-family: "Protest Riot", sans-serif;
+  font-size: clamp(2rem, 5.5vw, 2.3rem);
+}
 .paragraph--footer {
   font-weight: 700;
 }
