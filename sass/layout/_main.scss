@@ -21,19 +21,33 @@
             gap: 9rem; 
       }
       &__about {
-            background-color: white;
-            width: 100%;
-            min-height: 95vh;
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
       }
       &__accommodation {
-            background-color: black;
-            width: 100%;
-            min-height: 95vh;
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
       }
       &__activities {
-            background-color: white;
-            width: 100%;
-            min-height: 95vh;
+            @include displayFlexColumn;
+            justify-content: flex-start;
+            gap: 3rem;
+            width: min(100%, 45rem);
+            padding: 3rem 1rem;
+      }
+      &__activitiesItemContainer {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
+      &__activitiesItem {
+            @include displayFlexColumn;
+            gap: 1rem;
       }
       &__gallery {
             @include displayFlexColumn;
