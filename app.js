@@ -28,27 +28,6 @@ const footer = document.querySelector('.footer');
 
 const hero = document.querySelector('.heroSection');
 
-
-// // //////////////////////////////////////////////////////////////////////////////////////////
-// // // Terms and Conditions pop-up logic
-// // //////////////////////////////////////////////////////////////////////////////////////////
-// const termsAndConditionsBtn = document.querySelector('.termsAndConditionsBtn');
-// const tsAndCsCloseBtn = document.querySelector('.termsAndConditionsCloseBtn');
-// const tsAndCs = document.querySelector('.tsAndCs');
-
-// termsAndConditionsBtn.addEventListener('click', function() {
-//   if(tsAndCs.classList.contains('hidden')) {
-//     tsAndCs.classList.remove('hidden');
-//   } 
-// });
-
-// tsAndCsCloseBtn.addEventListener('click', function() {
-//       tsAndCs.classList.add('hidden');
-// });
-
-
-/////////////////////////////////////////////////////////////////////////////////////////
-
 let footerHeight = footer.offsetHeight;
 console.log(`${window.innerHeight - footerHeight}px`);
 

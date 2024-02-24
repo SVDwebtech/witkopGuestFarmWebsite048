@@ -1,6 +1,11 @@
 .logo {
+      @include displayFlexRow;
+      gap: .5rem;
       &__img {
             width: 6.5rem;
             height: 6.5rem;
+      }
+      &__lineBreak {
+            display: block;
       }
 }
