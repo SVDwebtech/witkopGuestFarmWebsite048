@@ -119,12 +119,15 @@ body {
 .logo {
   color: #ddc468ff;
   font-family: "Inika", serif;
-  font-size: clamp(1.6rem, 4.8vw, 1.8rem);
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.logo__textTop {
+  font-size: clamp(1.5rem, 4.5vw, 1.7rem);
 }
 
 .headingH2 {
@@ -326,11 +329,16 @@ body {
   gap: 0.5rem;
 }
 .logo__img {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 5rem;
+  height: 5rem;
 }
 .logo__lineBreak {
   display: block;
+}
+@media (min-width: 350px) {
+  .logo__lineBreak {
+    display: none;
+  }
 }
 
 .logoContainer {
