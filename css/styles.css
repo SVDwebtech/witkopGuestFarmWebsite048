@@ -130,6 +130,17 @@ body {
   font-size: clamp(1.5rem, 4.5vw, 1.7rem);
 }
 
+.navLink {
+  color: #ddc468ff;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.4rem, 4.5vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .headingH2 {
   color: #171511ff;
   font-family: "Protest Riot", sans-serif;
@@ -412,7 +423,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(to bottom, #171511 7%, #3e3e3e 30%, #3e3e3e 93%);
+  background: linear-gradient(to bottom, #171511 7%, #3e3e3e 30%, #171511 93%);
   width: 100%;
   height: 120vh;
   margin: 0;
