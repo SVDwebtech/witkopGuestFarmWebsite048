@@ -684,7 +684,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  gap: 3rem;
+  gap: 2rem;
   width: min(100%, 45rem);
   min-height: 95vh;
   padding: 3rem 1rem;
