@@ -26,6 +26,14 @@
             gap: 3rem;
             width: min(100%, 45rem);
             padding: 3rem 1rem;
+            margin-top: 220px;
+      }
+      &__imgContainer--aboutTop {
+            filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+            position: absolute;
+            top: 425px;
+            left: 0;
+            z-index: -100;
       }
       &__accommodation {
             @include displayFlexColumn;
