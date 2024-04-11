@@ -29,7 +29,7 @@ html {
 }
 body {
 	@include displayFlexColumn;
-	gap: 5rem;
+	// gap: 5rem;
 	background-color: $cp-bone;
 	box-sizing: border-box;
 }

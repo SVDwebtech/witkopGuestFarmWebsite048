@@ -90,7 +90,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
   background-color: #dfd9cdff;
   box-sizing: border-box;
 }
@@ -348,6 +347,55 @@ body {
   background-color: #8a6a42ff;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 5px;
+  width: 100%;
+  max-width: 800px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adjust based on number of photos */
+.photo1 {
+  grid-column: span 12;
+  grid-row: span 12;
+}
+
+.photo2 {
+  grid-column: span 6;
+  grid-row: span 12;
+}
+
+.photo3 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+.photo4 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+.photo5 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
 .imgComp {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 97%, 65% 100%, 45% 90%, 25% 97%, 0 92%);
 }
@@ -358,7 +406,7 @@ body {
 }
 .imgComp__txt {
   position: absolute;
-  top: 210px;
+  bottom: 20%;
   left: 0;
   right: 0;
 }
@@ -736,19 +784,16 @@ body {
   align-items: center;
   width: 100%;
   gap: 5rem;
-  padding: 0 1rem;
 }
 @media (min-width: 37.5em) {
   .main {
     gap: 6rem;
-    padding: 2rem;
   }
 }
 @media (min-width: 56.25em) {
   .main {
     flex: 1 0 70%;
     gap: 7rem;
-    padding: 2rem 0 2rem 2rem;
   }
 }
 @media (min-width: 75em) {
@@ -768,16 +813,24 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
-  width: min(100%, 45rem);
-  padding: 3rem 1rem;
-  margin-top: 220px;
+  padding: 112vw 1rem 3rem;
+  margin-top: 0;
+  position: relative;
 }
 .main__imgContainer--aboutTop {
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
   position: absolute;
-  top: 425px;
+  top: 0;
   left: 0;
   z-index: -100;
+}
+.main__textContainerAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: min(100%, 45rem);
 }
 .main__accommodation {
   display: flex;
