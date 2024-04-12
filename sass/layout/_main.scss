@@ -31,16 +31,11 @@
       }
       &__imgContainer--aboutTop {
             filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
             z-index: -100;
-            // @media (min-width: 290px) {
-            //       top: 408px
-            // }
-            // @media (min-width: 465px) {
-            //       top: 457px
-            // }
       }
       &__textContainerAbout {
             @include displayFlexColumn;
@@ -67,7 +62,7 @@
       }
       &__activitiesItem {
             @include displayFlexColumn;
-            gap: 1rem;
+            gap: 3rem;
       }
       &__gallery {
             @include displayFlexColumn;
@@ -75,5 +70,29 @@
             gap: 3rem;
             width: min(100%, 45rem);
             padding: 3rem 1rem;
+      }
+      &__imgCompAndTxtContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
+      @include respond(tab-land) {
+            &__textContainerAbout, &__accommodation, &__activities, &__gallery {
+                  width: min(100%, 75rem);
+                  padding: 3rem 5rem;
+            }
+            &__imgCompAndTxtContainer {
+                  @include displayFlexRow;
+                  align-items: center;
+                  gap: 5rem;
+            }
+      }
+      @include respond(desk) {
+            &__textContainerAbout, &__accommodation, &__activities, &__gallery {
+                  width: min(100%, 90rem);
+                  padding: 3rem 5rem;
+            }
+            &__imgCompAndTxtContainer {
+                  gap: 8rem;
+            }
       }
 }

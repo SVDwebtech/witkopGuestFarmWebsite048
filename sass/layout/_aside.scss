@@ -78,4 +78,23 @@
             width: 100%;
             height: 60vw;
       }
+      @include respond(tab-land) {
+            &__testimonials, &__socialMedia, &__contact {
+                  width: min(100%, 75rem);
+                  padding: 3rem 5rem;
+            }
+            &__imgCompAndTxtContainer {
+                  @include displayFlexRow;
+                  gap: 5rem;
+            }
+      }
+      @include respond(desk) {
+            &__testimonials, &__socialMedia, &__contact {
+                  width: min(100%, 90rem);
+                  padding: 3rem 5rem;
+            }
+            &__imgCompAndTxtContainer {
+                  gap: 8rem;
+            }
+      }
 }
