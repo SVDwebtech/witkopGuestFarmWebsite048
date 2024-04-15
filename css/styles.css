@@ -271,6 +271,7 @@ body {
 }
 .btn--primary-coyote {
   background-color: #8a6a42ff;
+  margin-top: 1rem;
 }
 .btn--secondary-coyote {
   background-color: transparent;
@@ -1023,9 +1024,24 @@ body {
 }
 .header__heroLogoImage {
   display: block;
-  width: 65%;
+  width: 17rem;
   height: auto;
 }
+@media (min-width: 56.25em) {
+  .header__heroSectionContentContainer {
+    width: min(100%, 75rem);
+    padding: 3rem 5rem;
+  }
+  .header__heroLogoImage {
+    width: 20rem;
+  }
+}
+@media (min-width: 75em) {
+  .header__heroSectionContentContainer {
+    width: min(100%, 90rem);
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;

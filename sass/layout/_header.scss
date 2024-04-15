@@ -16,10 +16,21 @@
       }
       &__heroLogoImage {
             display: block;
-            width: 65%;
+            width: 17rem;
             height: auto;
       }
       @include respond(tab-land) {
-
+            &__heroSectionContentContainer {
+                  width: min(100%, 75rem);
+                  padding: 3rem 5rem;
+            }
+            &__heroLogoImage {
+                  width: 20rem;
+            }
+      }
+      @include respond(desk) {
+            &__heroSectionContentContainer {
+                  width: min(100%, 90rem);
+            }
       }
 }
