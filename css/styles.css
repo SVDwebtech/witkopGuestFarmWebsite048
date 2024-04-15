@@ -163,6 +163,11 @@ body {
 .headingH3--footer {
   color: #8a6a42ff;
 }
+@media (min-width: 56.25em) {
+  .headingH3--footer {
+    text-align: left;
+  }
+}
 
 .headingH4 {
   color: #171511ff;
@@ -175,6 +180,11 @@ body {
 .headingH4--footer {
   color: #ddc468ff;
   text-transform: lowercase;
+}
+@media (min-width: 56.25em) {
+  .headingH4--footer {
+    text-align: left;
+  }
 }
 
 .paragraph--heroIntro {
@@ -233,9 +243,20 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.footer__footerNavitem, .footer__footerTermsAndConditions, .footer__footerPrivacyPolicy, .footer__footerDeveloper {
+  text-align: center;
+}
 .footer__footerCopyright {
   font-size: clamp(1.5rem, 4.5vw, 1.7rem);
   font-weight: 700;
+}
+@media (min-width: 56.25em) {
+  .footer__footerNavitem, .footer__footerTermsAndConditions, .footer__footerPrivacyPolicy, .footer__footerDeveloper {
+    text-align: left;
+  }
+  .footer__footerTermsAndConditions, .footer__footerPrivacyPolicy, .footer__footerDeveloper {
+    text-align: right;
+  }
 }
 
 .text-align-center {
@@ -969,10 +990,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-color: #171511ff;
   width: 100%;
   padding: 3rem 1rem;
+}
+.footer__logoAndSocialContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 .footer__figure {
   width: 85%;
@@ -1002,8 +1030,72 @@ body {
   align-items: center;
   gap: 2rem;
 }
+.footer__linksAndLegalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 .footer__footerBrDeveloper {
   display: block;
+}
+@media (min-width: 56.25em) {
+  .footer {
+    padding: 3rem 5rem;
+  }
+  .footer__figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 0 50%;
+  }
+  .footer__figureFigcaption {
+    max-width: 20rem;
+  }
+  .footer__figureLogoImg {
+    width: clamp(8rem, 20vw, 12rem);
+  }
+  .footer__footerSocialMediaNavigation {
+    align-items: flex-end;
+  }
+  .footer__logoAndSocialContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7rem;
+    width: min(100%, 75rem);
+  }
+  .footer__footerSiteNavigation {
+    align-items: flex-start;
+  }
+  .footer__websiteUsageNavigation {
+    align-items: flex-end;
+  }
+  .footer__linksAndLegalContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 7rem;
+    width: min(100%, 75rem);
+  }
+  .footer__footerCopyrightAndDeveloperContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 7rem;
+    width: min(100%, 75rem);
+  }
 }
 
 .header {

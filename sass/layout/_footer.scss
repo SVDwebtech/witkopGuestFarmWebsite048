@@ -1,9 +1,13 @@
 .footer {
       @include displayFlexColumn;
-      gap: 1rem;
+      gap: 2rem;
       background-color: $cp-smoky-black;
       width: 100%;
       padding: 3rem 1rem;
+      &__logoAndSocialContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
       &__figure {
             width: 85%;
       }
@@ -26,7 +30,54 @@
             @include displayFlexRow;
             gap: 2rem;
       }
+      &__linksAndLegalContainer {
+            @include displayFlexColumn;
+            gap: 2rem;
+      }
       &__footerBrDeveloper {
             display: block;
+      }
+      @include respond(tab-land) {
+            padding: 3rem 5rem;
+            &__figure {
+                  @include displayFlexRow;
+                  justify-content: flex-start;
+                  flex: 0 0 50%;
+            }
+            &__figureFigcaption {
+                  max-width: 20rem;
+            }
+            &__figureLogoImg {
+                  width: clamp(8rem, 20vw, 12rem);
+            }
+            &__footerSocialMediaNavigation {
+                  align-items: flex-end;
+            }
+            &__logoAndSocialContainer {
+                  @include displayFlexRow;
+                  justify-content: space-between;
+                  gap: 7rem;
+                  width: min(100%, 75rem);
+            }
+            &__footerSiteNavigation {
+                  align-items: flex-start;
+            }
+            &__websiteUsageNavigation {
+                  align-items: flex-end;
+            }
+            &__linksAndLegalContainer {
+                  @include displayFlexRow;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  gap: 7rem;
+                  width: min(100%, 75rem);
+            }  
+            &__footerCopyrightAndDeveloperContainer {
+                  @include displayFlexRow;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  gap: 7rem;
+                  width: min(100%, 75rem);
+            }
       }
 }

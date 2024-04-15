@@ -53,6 +53,11 @@ body {
 	&--footer {
 		color: $cf-coyote;
 	}
+	@include respond(tab-land) {
+		&--footer {
+			text-align: left;
+		}
+	}
 }
 .headingH4 {
 	color: $cf-smoky-black;
@@ -64,6 +69,11 @@ body {
 	&--footer {
 		color: $cf-citron;
 		text-transform: lowercase;
+	}
+	@include respond(tab-land) {
+		&--footer {
+			text-align: left;
+		}
 	}
 }
 .paragraph {
@@ -125,9 +135,20 @@ body {
 		text-decoration: underline;
 		text-underline-offset: 3px;
 	}
+	&__footerNavitem, &__footerTermsAndConditions, &__footerPrivacyPolicy, &__footerDeveloper {
+		text-align: center;
+	}
 	&__footerCopyright {
 		font-size: clamp(1.5rem, 4.5vw, 1.7rem);
 		font-weight: 700;
+	}
+	@include respond(tab-land) {
+		&__footerNavitem, &__footerTermsAndConditions, &__footerPrivacyPolicy, &__footerDeveloper {
+			text-align: left;
+		}
+		&__footerTermsAndConditions, &__footerPrivacyPolicy, &__footerDeveloper {
+			text-align: right;
+		}	
 	}
 }
 
