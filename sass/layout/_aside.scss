@@ -40,6 +40,10 @@
             width: min(100%, 45rem);
             padding: 3rem 1rem;
       }
+      &__imgCompAndTxtContainer {
+            @include displayFlexColumn;
+            gap: 3rem;
+      }
       &__socialMediaNavigation {
             @include displayFlexColumn;
             gap: 2rem;

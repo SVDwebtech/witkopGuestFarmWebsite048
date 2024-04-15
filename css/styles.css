@@ -865,6 +865,13 @@ body {
   width: min(100%, 45rem);
   padding: 3rem 1rem;
 }
+.sidebar__imgCompAndTxtContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
 .sidebar__socialMediaNavigation {
   display: flex;
   flex-direction: column;
