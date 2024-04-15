@@ -61,7 +61,7 @@
       }
       &__contactAddressContainer {
             @include displayFlexColumn;
-            gap: 2rem;
+            gap: 4rem;
       }
       &__contactAddressItem {
             @include displayFlexColumn;
@@ -86,6 +86,16 @@
             &__imgCompAndTxtContainer {
                   @include displayFlexRow;
                   gap: 5rem;
+            }
+            &__contactAddressContainer {
+                  @include displayFlexRow;
+                  gap: 8rem;
+            }
+            &__contactAddressItem {
+                  align-items: flex-start;
+            }
+            &__contactGoogleMapsMap {
+                  height: 30vw;
             }
       }
       @include respond(desk) {

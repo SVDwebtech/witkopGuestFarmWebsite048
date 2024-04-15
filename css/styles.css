@@ -898,7 +898,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 .sidebar__contactAddressItem {
   display: flex;
@@ -932,6 +932,19 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5rem;
+  }
+  .sidebar__contactAddressContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+  }
+  .sidebar__contactAddressItem {
+    align-items: flex-start;
+  }
+  .sidebar__contactGoogleMapsMap {
+    height: 30vw;
   }
 }
 @media (min-width: 75em) {
