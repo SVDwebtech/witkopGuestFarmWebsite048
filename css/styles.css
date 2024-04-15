@@ -826,30 +826,20 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  gap: 5rem;
+  gap: 1rem;
   padding: 0 1rem;
 }
 @media (min-width: 37.5em) {
   .sidebar {
-    gap: 6rem;
+    gap: 1rem;
     padding: 2rem;
   }
 }
 @media (min-width: 56.25em) {
   .sidebar {
     flex: 1 0 25%;
-    gap: 7rem;
+    gap: 3rem;
     padding: 2rem 2rem 2rem 0rem;
-  }
-}
-@media (min-width: 75em) {
-  .sidebar {
-    gap: 8rem;
-  }
-}
-@media (min-width: 75em) {
-  .sidebar {
-    gap: 9rem;
   }
 }
 .sidebar__testimonials {
@@ -1050,27 +1040,17 @@ body {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  gap: 5rem;
+  gap: 1rem;
 }
 @media (min-width: 37.5em) {
   .main {
-    gap: 6rem;
+    gap: 1rem;
   }
 }
 @media (min-width: 56.25em) {
   .main {
     flex: 1 0 70%;
-    gap: 7rem;
-  }
-}
-@media (min-width: 75em) {
-  .main {
-    gap: 8rem;
-  }
-}
-@media (min-width: 75em) {
-  .main {
-    gap: 9rem;
+    gap: 3rem;
   }
 }
 .main__about {
@@ -1125,7 +1105,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 8rem;
 }
 .main__activitiesItem {
   display: flex;
@@ -1156,6 +1136,9 @@ body {
     width: min(100%, 75rem);
     padding: 3rem 5rem;
   }
+  .main__textContainerAbout {
+    padding: 0rem 5rem;
+  }
   .main__imgCompAndTxtContainer {
     display: flex;
     flex-direction: row;
@@ -1169,6 +1152,9 @@ body {
   .main__textContainerAbout, .main__accommodation, .main__activities, .main__gallery {
     width: min(100%, 90rem);
     padding: 3rem 5rem;
+  }
+  .main__textContainerAbout {
+    padding: 0rem 5rem;
   }
   .main__imgCompAndTxtContainer {
     gap: 8rem;

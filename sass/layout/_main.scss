@@ -3,22 +3,22 @@
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      gap: 5rem;
+      gap: 1rem;
       // padding: 0 1rem;
       @include respond(tab-port) {
-            gap: 6rem; 
+            gap: 1rem; 
             // padding: 2rem;
       }
       @include respond(tab-land) {
             flex: 1 0 70%;
-            gap: 7rem;
+            gap: 3rem;
             // padding: 2rem 0 2rem 2rem; 
       }
       @include respond(desk) {
-            gap: 8rem; 
+            // gap: 1rem; 
       }
       @include respond(desk) {
-            gap: 9rem; 
+            // gap: 1rem; 
       }
       &__about {
             @include displayFlexColumn;
@@ -58,7 +58,7 @@
       }
       &__activitiesItemContainer {
             @include displayFlexColumn;
-            gap: 3rem;
+            gap: 8rem;
       }
       &__activitiesItem {
             @include displayFlexColumn;
@@ -80,6 +80,9 @@
                   width: min(100%, 75rem);
                   padding: 3rem 5rem;
             }
+            &__textContainerAbout {
+                  padding: 0rem 5rem;
+            }
             &__imgCompAndTxtContainer {
                   @include displayFlexRow;
                   align-items: center;
@@ -90,6 +93,9 @@
             &__textContainerAbout, &__accommodation, &__activities, &__gallery {
                   width: min(100%, 90rem);
                   padding: 3rem 5rem;
+            }
+            &__textContainerAbout {
+                  padding: 0rem 5rem;
             }
             &__imgCompAndTxtContainer {
                   gap: 8rem;

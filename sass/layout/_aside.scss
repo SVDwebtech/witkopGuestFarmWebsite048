@@ -3,22 +3,22 @@
       justify-content: flex-start;
       align-items: center;
       width: 100%;
-      gap: 5rem;
+      gap: 1rem;
       padding: 0 1rem;
       @include respond(tab-port) {
-            gap: 6rem; 
+            gap: 1rem; 
             padding: 2rem;
       }
       @include respond(tab-land) {
             flex: 1 0 25%;
-            gap: 7rem; 
+            gap: 3rem; 
             padding: 2rem 2rem 2rem 0rem; 
       }
       @include respond(desk) {
-            gap: 8rem; 
+            // gap: 1rem; 
       }
       @include respond(desk) {
-            gap: 9rem; 
+            // gap: 1rem; 
       }
       &__testimonials {
             @include displayFlexColumn;
