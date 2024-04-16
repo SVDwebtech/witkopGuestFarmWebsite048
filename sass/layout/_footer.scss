@@ -7,6 +7,10 @@
       &__logoAndSocialContainer {
             @include displayFlexColumn;
             gap: 2rem;
+
+            a {
+                  @include displayFlexColumn;
+            }
       }
       &__figure {
             width: 85%;
@@ -56,6 +60,7 @@
             &__logoAndSocialContainer {
                   @include displayFlexRow;
                   justify-content: space-between;
+                  align-items: flex-start;
                   gap: 7rem;
                   width: min(100%, 75rem);
             }

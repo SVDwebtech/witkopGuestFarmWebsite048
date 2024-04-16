@@ -1034,6 +1034,12 @@ body {
   align-items: center;
   gap: 2rem;
 }
+.footer__logoAndSocialContainer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .footer__figure {
   width: 85%;
 }
@@ -1099,6 +1105,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 7rem;
     width: min(100%, 75rem);
   }
