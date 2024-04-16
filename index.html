@@ -12,20 +12,23 @@
     </head>
 
     <body>
+        <div id="homeLink" class="divLink"></div>
         <header class="header">
             <nav class="header__navbarSection navbarSection">
                 <div class="navbarSection__logoContainer logoContainer">
-                    <figure class="logoContainer__logo logo">
-                        <img class="logo__img" src="./img/Logo/IsantiGuestFarmLogo.webp"
-                            alt="logo image of witkophuntingsafaris">
-                        <figcaption class="logo__text">
-                            <p class="logo__text">
-                                <span class="logo__textTop">Isanti</span><br class="logo__lineBreak"/>
-                                <span class="logo__textMiddle">Guest</span>
-                                <span class="logo__textBottom">Farm</span>
-                            </p>
-                        </figcaption>
-                    </figure>
+                    <a href="#homeLink">
+                        <figure class="logoContainer__logo logo">
+                            <img class="logo__img" src="./img/Logo/IsantiGuestFarmLogo.webp"
+                                alt="logo image of witkophuntingsafaris">
+                            <figcaption class="logo__text">
+                                <p class="logo__text">
+                                    <span class="logo__textTop">Isanti</span><br class="logo__lineBreak"/>
+                                    <span class="logo__textMiddle">Guest</span>
+                                    <span class="logo__textBottom">Farm</span>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <button class="navbar__hamburgerBtn hamburgerBtn">
                     <span class="hamburgerBtn__hamburgerBar hamburgerBar hamburgerBtn__hamburgerBar--top"></span>
@@ -41,22 +44,22 @@
                         <a class="navList__navLink navLink" href="#aboutLink">About Isanti Guest Farm</a>
                     </li>
                     <li class="navList__navItem navItem navItem3">
-                        <a class="navList__navLink navLink" href="#huntingLink">Accommodation</a>
+                        <a class="navList__navLink navLink" href="#accommLink">Accommodation</a>
                     </li>
                     <li class="navList__navItem navItem navItem4">
-                        <a class="navList__navLink navLink" href="#galaryLink">Activities</a>
+                        <a class="navList__navLink navLink" href="#activitiesLink">Activities</a>
                     </li>
                     <li class="navList__navItem navItem navItem5">
-                        <a class="navList__navLink navLink" href="#faqLink">Gallery</a>
+                        <a class="navList__navLink navLink" href="#galleryLink">Gallery</a>
                     </li>
                     <li class="navList__navItem navItem navItem6">
-                        <a class="navList__navLink navLink" href="#contactLink">Social Media</a>
+                        <a class="navList__navLink navLink" href="#socialMediaLink">Social Media</a>
                     </li>
                     <li class="navList__navItem navItem navItem7">
-                        <a class="navList__navLink navLink" href="#socialMediaLink">Contact Us</a>
+                        <a class="navList__navLink navLink" href="#contactLink">Contact Us</a>
                     </li>
                     <li class="navList__navItem navItem navItem8">
-                        <a class="navList__navLink navLink" href="#socialMediaLink">Get Directions</a>
+                        <a class="navList__navLink navLink" href="#directionsLink">Get Directions</a>
                     </li>
                 </ul>
             </nav>
@@ -71,7 +74,9 @@
                         featuring a fully equipped kitchen and lounge area, a dedicated braai boma and 
                         a well-stocked bar, as well as a rejuvenating swimming pool.</p>
                     <div class="header__buttonContainer">
-                        <button class="btn btn--primary-coyote">Book Now</button>
+                        <a href="#contactLink">
+                            <button class="btn btn--primary-coyote">Contact Us & Book Now</button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -88,7 +93,8 @@
                         </figure>
                     </div>                    
                     <!-- <h2 class="main__headingH2 headingH2 headingH2--about">About Isanti Guest Farm</h2> -->
-                    <div class="main__textContainerAbout">
+                    <div class="main__textContainerAbout main__aboutLinkParagraphContainer">
+                        <div id="aboutLink" class="divLink divLink--about"></div>
                         <p class="main__paragraph paragraph paragraph--activities">Nestled in the heart of 
                             the bushveld, just under two hours from Pretoria, Isanti Guest Farm welcomes 
                             you to a malaria-free haven within the Springbok plains. Escape the urban 
@@ -111,6 +117,7 @@
                     </div>
                 </section>
                 <section class="main__accommodation">
+                    <div id="accommLink" class="divLink divLink--accomm"></div>
                     <h2 class="main__headingH2 headingH2 HeadingH2--activities">Accommodation</h2>
                     <div class="main__activitiesItemContainer">
                         <article class="main__activitiesItem">
@@ -202,6 +209,7 @@
                     </div>
                 </section>
                 <section class="main__activities">
+                    <div id="activitiesLink" class="divLink divLink--activities"></div>
                     <h2 class="main__headingH2 headingH2 HeadingH2--activities">Activities</h2>
                     <div class="main__activitiesItemContainer">
                         <article class="main__activitiesItem">
@@ -305,6 +313,7 @@
                     </div>
                 </section>
                 <section class="main__gallery">
+                    <div id="galleryLink" class="divLink divLink--gallery"></div>
                     <h2 class="main__headingH2 headingH2 headingH2--gallery">Gallery</h2>
                     <div class="main__imgCompAndTxtContainer">
                         <p class="sidebar__paragraph paragraph paragraph--gallery">Explore Isanti Guest 
@@ -415,14 +424,16 @@
             </main>
     
             <aside class="sidebar">
-                <section class="sidebar__testimonials">
+                <div id="testimonialsLink" class="divLink divLink--testimonials"></div>
+                <!-- <section class="sidebar__testimonials">
                     <h2 class="sidebar__headingH2 headingH2 headingH2--testimonials">Testimonials</h2>
                     <div class="sidebar__testimonialsWidgetContainer">
                         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
                         <div class="elfsight-app-a0e71dae-8293-48cd-a9c8-97c630131cad sidebar__testimonialsContainer" data-elfsight-app-lazy></div>
                     </div>
-                </section>
+                </section> -->
                 <section class="sidebar__socialMedia">
+                    <div id="socialMediaLink" class="divLink divLink--socialMedia"></div>
                     <h2 class="sidebar__headingH2 headingH2 headingH2--socialMedia">Social Media</h2>
                     <nav class="sidebar__socialMediaNavigation">
                         <div class="sidebar__imgCompAndTxtContainer">
@@ -451,6 +462,7 @@
                     </nav>
                 </section>
                 <section class="sidebar__contact">
+                    <div id="contactLink" class="divLink divLink--contact"></div>
                     <h2 class="sidebar__headingH2 headingH2 headingH2--sidebar">Contact Us</h2>
                     <address class="sidebar__contactAddressContainer">
                         <article class="sidebar__contactAddressItem">
@@ -465,6 +477,7 @@
                         </article> 
                     </address>
                     <article class="sidebar__contactGoogleMapsContainer">
+                        <div id="directionsLink" class="divLink divLink--directions"></div>
                         <h3 class="sidebar__headingH3 headingH3 headingH3--sidebar">Get Directions</h3>
                         <iframe class="sidebar__contactGoogleMapsMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.7043848132266!2d28.705283074630053!3d-24.805574108477323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec08259d4956be5%3A0x1f760eee828afc08!2sIsanti%20Guest%20Farm!5e0!3m2!1sen!2sza!4v1708669903597!5m2!1sen!2sza" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </article>
@@ -473,16 +486,18 @@
         </section>
         <footer class="footer">
             <div class="footer__logoAndSocialContainer">
-                <figure class="footer__figure">
-                    <img class="footer__figureLogoImg" src="./img/Logo/IsantiGuestFarmLogo.webp" alt="">
-                    <figcaption class="footer__figureFigcaption">
-                        <h3 class="footer__headingH3 headingH3 headingH3--footer">Isanti Guest Farm -</h3>
-                        <p class="footer__headingH4 headingH4 headingH4--footer">Where Comfort Meets the Sands of Serenity.</p>
-                        <!-- <p class="footer__paragraph paragraph paragraph-footer">Elegantly crafted lodging choices that 
-                            afford guests both comfort and privacy amidst the enchanting backdrop of the 
-                            African bushveld.</p> -->
-                    </figcaption>
-                </figure>
+                <a href="#homeLink">
+                    <figure class="footer__figure">
+                        <img class="footer__figureLogoImg" src="./img/Logo/IsantiGuestFarmLogo.webp" alt="">
+                        <figcaption class="footer__figureFigcaption">
+                            <h3 class="footer__headingH3 headingH3 headingH3--footer">Isanti Guest Farm -</h3>
+                            <p class="footer__headingH4 headingH4 headingH4--footer">Where Comfort Meets the Sands of Serenity.</p>
+                            <!-- <p class="footer__paragraph paragraph paragraph-footer">Elegantly crafted lodging choices that 
+                                afford guests both comfort and privacy amidst the enchanting backdrop of the 
+                                African bushveld.</p> -->
+                        </figcaption>
+                    </figure>
+                </a>
                 <nav class="footer__footerSocialMediaNavigation">
                     <h3 class="footer__footerHeadingH3 headingH3 headingH3--footer">Social Media</h3>
                     <ul class="footer__footerSocialMediaNavigationList">
@@ -507,13 +522,14 @@
                 <nav class="footer__footerSiteNavigation">
                     <h3 class="footer__footerHeadingH3 headingH3 headingH3--footer">Quick Links</h3>
                     <ul class="footer__footerSiteNavigationList">
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">Home &rarr;</a></li>
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">About &rarr;</a></li>
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">Accommodation &rarr;</a></li>
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">Activities &rarr;</a></li>
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">Gallery &rarr;</a></li>
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">Social Media &rarr;</a></li>
-                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#">Contact &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#homeLink">Home &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#aboutLink">About &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#accommLink">Accommodation &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#activitiesLink">Activities &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#galleryLink">Gallery &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#socialMediaLink">Social Media &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#contactLink">Contact &rarr;</a></li>
+                        <li class="footer__footerNavitem"><a class="footer__footerNavlink footerNavlink" href="#directionsLink">Get Directions &rarr;</a></li>
                     </ul>
                 </nav>
                 <nav class="footer__websiteUsageNavigation">

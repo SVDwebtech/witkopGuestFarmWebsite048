@@ -42,12 +42,16 @@
             gap: 3rem;
             width: min(100%, 45rem);
       }
+      &__aboutLinkParagraphContainer {
+            position: relative;
+      }
       &__accommodation {
             @include displayFlexColumn;
             justify-content: flex-start;
             gap: 3rem;
             width: min(100%, 45rem);
             padding: 3rem 1rem;
+            position: relative;
       }
       &__activities {
             @include displayFlexColumn;
@@ -55,6 +59,7 @@
             gap: 3rem;
             width: min(100%, 45rem);
             padding: 3rem 1rem;
+            position: relative;
       }
       &__activitiesItemContainer {
             @include displayFlexColumn;
@@ -70,6 +75,7 @@
             gap: 3rem;
             width: min(100%, 45rem);
             padding: 3rem 1rem;
+            position: relative;
       }
       &__imgCompAndTxtContainer {
             @include displayFlexColumn;

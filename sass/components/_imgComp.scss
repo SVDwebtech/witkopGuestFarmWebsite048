@@ -1,5 +1,6 @@
 .imgComp {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 97%, 65% 100%, 45% 90%, 25% 97%, 0 92%);
+      position: relative;
       &__img {
             display: block;
             width: 100%;

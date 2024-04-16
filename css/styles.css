@@ -369,6 +369,33 @@ body {
   background-color: #8a6a42ff;
 }
 
+.divLink {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+}
+.divLink--about {
+  top: -40rem;
+}
+.divLink--accomm, .divLink--activities, .divLink--gallery, .divLink--testimonials, .divLink--socialMedia, .divLink--contact, .divLink--directions {
+  top: -7rem;
+}
+@media (min-width: 56.25em) {
+  .divLink--about {
+    top: -50rem;
+  }
+}
+@media (min-width: 75em) {
+  .divLink--about {
+    top: -60rem;
+  }
+}
+@media (min-width: 112.5em) {
+  .divLink--about {
+    top: -70rem;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -649,6 +676,7 @@ body {
 }
 .imgComp {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 97%, 65% 100%, 45% 90%, 25% 97%, 0 92%);
+  position: relative;
 }
 .imgComp__img {
   display: block;
@@ -872,6 +900,7 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
   padding: 3rem 1rem;
+  position: relative;
 }
 .sidebar____testimonialsContainer {
   width: 100%;
@@ -885,6 +914,7 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
   padding: 3rem 1rem;
+  position: relative;
 }
 .sidebar__imgCompAndTxtContainer {
   display: flex;
@@ -920,6 +950,7 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
   padding: 3rem 1rem;
+  position: relative;
 }
 .sidebar__contactAddressContainer {
   display: flex;
@@ -943,6 +974,7 @@ body {
   gap: 2rem;
   width: 100%;
   padding: 1rem;
+  position: relative;
 }
 .sidebar__contactGoogleMapsMap {
   display: block;
@@ -1192,6 +1224,9 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
 }
+.main__aboutLinkParagraphContainer {
+  position: relative;
+}
 .main__accommodation {
   display: flex;
   flex-direction: column;
@@ -1201,6 +1236,7 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
   padding: 3rem 1rem;
+  position: relative;
 }
 .main__activities {
   display: flex;
@@ -1211,6 +1247,7 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
   padding: 3rem 1rem;
+  position: relative;
 }
 .main__activitiesItemContainer {
   display: flex;
@@ -1235,6 +1272,7 @@ body {
   gap: 3rem;
   width: min(100%, 45rem);
   padding: 3rem 1rem;
+  position: relative;
 }
 .main__imgCompAndTxtContainer {
   display: flex;
